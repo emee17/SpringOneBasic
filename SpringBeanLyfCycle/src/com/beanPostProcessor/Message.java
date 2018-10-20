@@ -23,14 +23,14 @@ public class Message
 	{
 		System.out.println("message id : "+id+"\n"+"message :"+message);
 	}
-	
+	public void init() throws Exception 
+	{
+		System.out.println(" After Bean Initialization");
+	}
 	public void destroy() throws Exception 
 	{
 		System.out.println("Before Bean Destroy");
 	}
 	
-	public void init() throws Exception 
-	{
-		System.out.println(" Before Bean Initialization");
-	}
+	
 }

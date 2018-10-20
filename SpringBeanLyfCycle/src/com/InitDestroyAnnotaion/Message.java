@@ -24,13 +24,13 @@ public class Message
 	{
 		System.out.println("message id : "+id+" message :"+message);
 	}
-	@PreDestroy
-	public void destroy() throws Exception 
-	{
-		System.out.println("Before Bean Initialization");
-	}
 	@PostConstruct
 	public void init() throws Exception 
+	{
+		System.out.println("After Bean Initialization");
+	}
+	@PreDestroy
+	public void destroy() throws Exception 
 	{
 		System.out.println("Before Bean Destroy");
 	}

@@ -11,6 +11,8 @@ public class MethodInjection
 		
 		TicketVendingMachine tvm = (TicketVendingMachine) context.getBean("tvm");
 		
+		System.out.println(tvm.generateTicket());
+		
 		Ticket ticket =(Ticket) tvm.generateTicket();
 		
 		System.out.println(ticket.printTicket());

@@ -24,12 +24,12 @@ public class Message implements InitializingBean, DisposableBean
 		System.out.println("message id : "+id+" message :"+message);
 	}
 	@Override
-	public void destroy() throws Exception 
+	public void afterPropertiesSet() throws Exception 
 	{
-		System.out.println("Before Bean Initialization");
+		System.out.println("After Bean Initialization");
 	}
 	@Override
-	public void afterPropertiesSet() throws Exception 
+	public void destroy() throws Exception 
 	{
 		System.out.println("Before Bean Destroy");
 	}
